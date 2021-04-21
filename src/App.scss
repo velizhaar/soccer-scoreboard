@@ -177,5 +177,9 @@ footer {
   }
 }
 .loading {
+  display: flex;
   color: white;
+  justify-content: center;
+  margin: 20rem 0;
+  font-weight: bold;
 }
