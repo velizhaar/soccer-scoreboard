@@ -19,7 +19,7 @@ export default function Matches({ data }) {
         method: "get",
         url: `https://client.elevenscore.com/api/football/match/live/${data.gameId}`,
         headers: {
-          "X-Api-Key": process.env.REACT_APP_API_KEY,
+          "X-Api-Key": "24578cdb-fc01-4794-9bb0-865dd8ac405c",
         },
       })
       console.log(response.data.techStats)
