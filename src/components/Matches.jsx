@@ -61,40 +61,36 @@ export default function Matches({ data }) {
           <p className="away_team_name">{data.awayTeamEvent.name}</p>
         </div>
       </div>
-      {data.status === 8 ? (
-        <>
-          {matchStatistics == null ? (
-            " "
-          ) : (
-            <div className={isActive ? "statistics-data" : "hide"}>
-              <p>
-                {matchStatistics.map((m, index) => (
-                  <div className="statistics-data_details" key={index}>
-                    <p>Away: {m.away}</p>
-                    <p>Home: {m.home}</p>
-                    <p>Event: {m.typeName}</p>
-                  </div>
-                ))}
-              </p>
-            </div>
-          )}
-          <div className="statistics" onClick={() => handleGetStatistics()}>
+      <>
+        {matchStatistics == null ? (
+          " "
+        ) : (
+          <div className={isActive ? "statistics-data" : "hide"}>
             <p>
-              <IoAnalyticsOutline size="1rem" />
-              Statistics
+              {matchStatistics.map((m, index) => (
+                <div className="statistics-data_details" key={index}>
+                  <p>Away: {m.away}</p>
+                  <p>Home: {m.home}</p>
+                  <p>Event: {m.typeName}</p>
+                </div>
+              ))}
             </p>
-            <button>
-              {isActive ? (
-                <RiArrowUpSLine size="1.5rem" color="rgb(165, 165, 165)" />
-              ) : (
-                <RiArrowDownSLine size="1.5rem" />
-              )}
-            </button>
           </div>
-        </>
-      ) : (
-        ""
-      )}
+        )}
+        <div className="statistics" onClick={() => handleGetStatistics()}>
+          <p>
+            <IoAnalyticsOutline size="1rem" />
+            Statistics
+          </p>
+          <button>
+            {isActive ? (
+              <RiArrowUpSLine size="1.5rem" color="rgb(165, 165, 165)" />
+            ) : (
+              <RiArrowDownSLine size="1.5rem" />
+            )}
+          </button>
+        </div>
+      </>
     </div>
   )
 }

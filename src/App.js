@@ -23,15 +23,15 @@ function App() {
       })
       console.log(response)
       setUpcomingMatches(
-        response.data.result.filter((match) => match.status === 1).splice(0, 10)
+        response.data.result.filter((match) => match.status === 1).slice(0, 5)
       )
       setFinishedMatches(
-        response.data.result.filter((match) => match.status === 8).splice(0, 10)
+        response.data.result.filter((match) => match.status === 8).slice(0, 5)
       )
       setRunningMatch(
-        response.data.result.filter(
-          (match) => match.status > 1 && match.status < 4
-        )
+        response.data.result
+          .filter((match) => match.status > 1 && match.status < 4)
+          .slice(0, 5)
       )
       setIsLoading(false)
     } catch (err) {
