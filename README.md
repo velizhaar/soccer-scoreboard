@@ -1,4 +1,6 @@
-![alt text](https://github.com/velizhaar/soccer-scoreboard/blob/master/soccer%20livescore.jpg&s=200)
+<br>
+<img height="700" src="https://github.com/velizhaar/soccer-scoreboard/blob/master/soccer%20livescore.jpg" />
+</br>
 
 # Getting Started with Create React App
 
