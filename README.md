@@ -1,3 +1,11 @@
+# Soccer Live Scoreboard
+
+This page shows the results of the football match scores, including running matches, upcoming matches, and finished matches.
+
+<br>
+<img height="700" src="https://github.com/velizhaar/soccer-scoreboard/blob/master/soccer%20livescore.jpg" />
+</br>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
