@@ -1,3 +1,5 @@
+#Soccer Live Scoreboard
+This page displays the results of the football match scores, incluing running matches, upcoming matches, and finished matches.
 <br>
 <img height="700" src="https://github.com/velizhaar/soccer-scoreboard/blob/master/soccer%20livescore.jpg" />
 </br>
