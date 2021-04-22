@@ -5,7 +5,6 @@ import { RiArrowDownSLine, RiArrowUpSLine } from "react-icons/ri"
 import { IoAnalyticsOutline } from "react-icons/io5"
 
 export default function Matches({ data }) {
-  console.log(data.status)
   const [matchStatistics, setMatchStatistics] = useState(null)
   const [isActive, setIsActive] = useState(false)
   const years = data.matchTime.split("-")
@@ -22,7 +21,6 @@ export default function Matches({ data }) {
           "X-Api-Key": "24578cdb-fc01-4794-9bb0-865dd8ac405c",
         },
       })
-      console.log(response.data.techStats)
       setMatchStatistics(response.data.techStats)
     }
   }

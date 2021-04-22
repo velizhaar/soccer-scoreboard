@@ -21,7 +21,6 @@ function App() {
           "X-Api-Key": "24578cdb-fc01-4794-9bb0-865dd8ac405c",
         },
       })
-      console.log(response)
       setUpcomingMatches(
         response.data.result.filter((match) => match.status === 1).slice(0, 7)
       )
