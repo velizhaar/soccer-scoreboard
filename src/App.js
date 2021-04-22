@@ -1,10 +1,10 @@
+import Navbar from "./components/Navbar"
+import Matches from "./components/Matches"
+import Footer from "./components/Footer"
 import "./App.scss"
 import axios from "axios"
-import { useEffect, useState } from "react"
-import Navbar from "./components/Navbar"
-import Footer from "./components/Footer"
-import Matches from "./components/Matches"
 import { currentDate } from "./utils/Time"
+import { useEffect, useState } from "react"
 
 function App() {
   const [upcomingMatches, setUpcomingMatches] = useState([])
@@ -23,15 +23,15 @@ function App() {
       })
       console.log(response)
       setUpcomingMatches(
-        response.data.result.filter((match) => match.status === 1).slice(0, 5)
+        response.data.result.filter((match) => match.status === 1).slice(0, 7)
       )
       setFinishedMatches(
-        response.data.result.filter((match) => match.status === 8).slice(0, 5)
+        response.data.result.filter((match) => match.status === 8).slice(0, 7)
       )
       setRunningMatch(
         response.data.result
           .filter((match) => match.status > 1 && match.status < 4)
-          .slice(0, 5)
+          .slice(0, 7)
       )
       setIsLoading(false)
     } catch (err) {
