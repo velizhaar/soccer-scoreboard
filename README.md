@@ -1,4 +1,5 @@
-![alt text] (https://github.com/velizhaar/soccer-scoreboard/blob/master/soccer%20livescore.jpg)
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![alt text](https://github.com/velizhaar/soccer-scoreboard/blob/master/soccer%20livescore.jpg)
 
 # Getting Started with Create React App
 
