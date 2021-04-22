@@ -18,7 +18,7 @@ function App() {
         method: "get",
         url: `https://client.elevenscore.com/api/football/match/matchfixtures?date=${date}&utc=7`,
         headers: {
-          "X-Api-Key": "24578cdb-fc01-4794-9bb0-865dd8ac405c",
+          "X-Api-Key": process.env.REACT_APP_API_KEY,
         },
       })
       setUpcomingMatches(
